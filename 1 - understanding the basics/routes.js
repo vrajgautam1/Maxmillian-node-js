@@ -3,8 +3,9 @@ const fs = require("fs");
 function dataHandler(req, res) {
     const url = req.url;
     const method = req.method;
-
+    
     if (url === "/form" || url === "/form/") {
+        console.log(url, method);
         res.write(`<!doctype html>
             <html lang="en">
               <head>
@@ -34,7 +35,7 @@ function dataHandler(req, res) {
               </body>
             </html>`);
         return res.end();
-    }
+        }
 
     if (url === "/message" && method === "POST") {
         const body = [];

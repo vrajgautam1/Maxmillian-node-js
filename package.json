@@ -1,0 +1,12 @@
+{
+  "name": "maxmillian-node-js",
+  "version": "1.0.0",
+  "description": "complete node.js guide",
+  "main": "first-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Vraj Gautam",
+  "license": "ISC"
+}
