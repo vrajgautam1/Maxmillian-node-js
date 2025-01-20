@@ -2,8 +2,10 @@ const path = require('path');
 const express = require("express")
 const router = express.Router()
 
+const rootDir = require("../util/path")
+
 router.get("/", (req, res, next)=>{
-    res.sendFile(path.join(__dirname,"../" ,"views", "shop.html"))
+    res.sendFile(path.join(rootDir ,"views", "shop.html"))
 }) 
 
 //so basically when i was using the router.use it was automatically sending me to the homepage. 
