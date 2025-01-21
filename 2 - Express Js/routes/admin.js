@@ -12,7 +12,7 @@ router.get("/add-product", (req, res, next)=>{
 //when user client sends a request to the server. the server sends back a response and not a request
 //so req.redirect() does not make sense
 router.post("/add-product", (req, res, next)=>{
-    let product = req.body.productName
+    let product = req.body.productName //get data from form using body  parser in app js
     console.log(product)
     res.redirect('/')
 })
